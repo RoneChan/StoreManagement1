@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StoreManagement</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_check_store">盘点</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_get_order">订单列表</string>
+    <string name="menu_entry">入库</string>
+    <string name="menu_return">退货处理</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_other">其他</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

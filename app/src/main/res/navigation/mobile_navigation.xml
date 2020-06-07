@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_sercah">
+
+    <fragment
+        android:id="@+id/nav_sercah"
+        android:name="com.example.storemanagement.ui.search.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/nav_check_store"
+        android:name="com.example.storemanagement.ui.checkStore.CheckStoreFragment"
+        android:label="@string/menu_check_store"
+        tools:layout="@layout/fragment_check_store" />
+
+
+    <fragment
+        android:id="@+id/nav_getOrder"
+        android:name="com.example.storemanagement.ui.getOrder.GetOrderFragment"
+        android:label="@string/menu_get_order"
+        tools:layout="@layout/fragment_get_order" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.storemanagement.ui.productEntry.productEntryFragment"
+        android:label="@string/menu_entry"
+        tools:layout="@layout/fragment_product_entry" />
+
+    <fragment
+        android:id="@+id/nav_return"
+        android:name="com.example.storemanagement.ui.saleReturn.SaleReturnFragment"
+        android:label="@string/menu_return"
+        tools:layout="@layout/fragment_sale_return" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.storemanagement.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.storemanagement.ui.other.orderFragment"
+        android:label="@string/menu_other"
+        tools:layout="@layout/fragment_other" />
+</navigation>

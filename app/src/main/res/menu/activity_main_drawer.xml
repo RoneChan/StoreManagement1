@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/nav_sercah"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="@string/menu_search" />
+        <item
+            android:id="@+id/nav_check_store"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_check_store" />
+
+        <item
+            android:id="@+id/nav_getOrder"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_get_order" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_entry" />
+
+        <item
+            android:id="@+id/nav_return"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_return" />
+    </group>
+
+    <item android:title="辅助功能">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_other" />
+        </menu>
+    </item>
+
+</menu>

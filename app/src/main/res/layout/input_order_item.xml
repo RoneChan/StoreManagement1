@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/front_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_shape2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_id_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/front_layout"
+            app:layout_constraintStart_toStartOf="@+id/front_layout"
+            app:layout_constraintTop_toTopOf="@+id/front_layout">
+
+            <TextView
+                android:id="@+id/tv_detail_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="服装ID："
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_clothes_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="输入服装ID"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_number_input"
+            android:layout_width="377dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/ll_id_input"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/front_layout"
+            app:layout_constraintStart_toStartOf="@+id/front_layout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_id_input">
+
+            <TextView
+                android:id="@+id/tv_detail_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="数 量:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_clothes_number"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="输入数量"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn_remove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="删除"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
